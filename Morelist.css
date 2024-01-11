@@ -1,0 +1,118 @@
+.job-list{
+    margin: 5%;
+    padding: 1rem;
+    background-color: var(--greyColor);
+}
+.job-card{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    min-height: 100px;
+    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+.job-card:hover{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.job-name{
+    display: flex;
+}
+.job-profile{
+    width: 60px;
+    height: 60px;
+    margin: 0.5rem;
+}
+.job-detail{
+    padding: 0 10px;
+}
+.job-detail > h4{
+    color: var(--labelColor);
+    font-size: 0.9rem;
+}
+.job-detail > p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.job-label{
+    display: flex;
+    flex-wrap: wrap;
+}
+.job-label > a{
+    padding: 0 1rem;
+    margin: 0.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.label-a{
+    background-color: coral;
+}
+.label-b{
+    background-color: blue;
+}
+.label-c{
+    background-color: black;
+}
+.job-posted{
+    font-size: 0.8rem;
+}
+.job-more{
+    display: block;
+    padding: 0.3rem 2rem;
+    margin: 20px auto;
+    width: 250px;
+    background-color: transparent;
+    color: var(--labelColor);
+    border: 1px solid var(--labelColor);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.job-more:hover{
+    background-color: var(--labelColor);
+    color: white;
+}
+.join{
+    width:100%;
+    height:250px;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+    position: relative;
+}
+.join::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,85,177,0.6) 0%, rgba(0,122,255,0.5) 100%),
+    linear-gradient(180deg, rgba(0,122,255,0.65) 0%,transparent 100%);
+    z-index: 1;
+}
+.join-detail{
+    min-width: 280px;
+    width: 50%;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+.join-detail > h1{
+    font-size: 36px;
+    letter-spacing: 2;
+}
